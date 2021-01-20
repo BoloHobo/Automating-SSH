@@ -57,12 +57,12 @@ def connect(user,host,password):
 
 #initializes the variables and executes the functions
 def main():
-	host = "192.168.86.99" #input("IP Address: ")
-	user = "kali" #input("Username: ")
-	password = "kali" #input("Password: ")
+	host = input("IP Address: ")
+	user = input("Username: ")
+	password = input("Password: ")
 	child = connect(user,host,password)
 	#child.sendline("sudo su")
-	#child.sendline("kali")
+	#child.sendline(input("Admin Password: "))
 	#if escalate(child,user,password):
 	#	print("[+] Escalation to root successful")
 	#else:
